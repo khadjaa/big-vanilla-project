@@ -19,7 +19,7 @@ test('sum should be corrected', () => {
     expect(result2).toBe(102);
 })
 
-test('mult should be corrected', () => {
+test('multiply should be corrected', () => {
     const result = mult(a, b);
     const result2 = mult(b, c);
 
