@@ -12,7 +12,7 @@ beforeEach(() => {
     }
 })
 
-test("city should contains 3 houses", () => {
+test("city should contains 2 houses", () => {
     expect(city.houses.length).toBe(2);
 
     expect(city.houses[0].buildedAt).toBe(1999);
