@@ -1,4 +1,4 @@
-import {mult, sum} from "./01";
+import {multiply, sum} from "./01";
 
 let a: number;
 let b: number;
@@ -20,8 +20,8 @@ test('sum should be corrected', () => {
 })
 
 test('multiply should be corrected', () => {
-    const result = mult(a, b);
-    const result2 = mult(b, c);
+    const result = multiply(a, b);
+    const result2 = multiply(b, c);
 
     expect(result).toBe(2);
     expect(result2).toBe(6);
