@@ -60,7 +60,7 @@ test("Houses should be destroyed", () => {
     expect(city.houses[0].id).toBe(1)
 })
 
-test("buildings with correct staff count", () => {
+test("Buildings with correct staff count", () => {
     let buildings = getBuildingWithStaffCounterGreaterThen(city.governmentBuildings, 100)
 
     expect(buildings.length).toBe(1)
