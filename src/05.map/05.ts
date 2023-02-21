@@ -10,6 +10,11 @@ const people: ManType[] = [
 ]
 
 const dimychTransformator = (man: ManType) => {
+    return {
+        stack: ["css, html", "js, ts", "react"],
+        firstName: man.name.split(' ')[0],
+        lastName: man.name.split(' ')[1]
+    }
 }
 
 const devs = [
@@ -26,3 +31,23 @@ const devs = [
         firstName: "Dmitry", lastName: "San"
     },
 ]
+
+const devs2 = [
+    dimychTransformator(people[0]),
+    dimychTransformator(people[1]),
+    dimychTransformator(people[2])
+]
+
+const devs3 = people.map(dimychTransformator)
+
+const devs4 = people.map(man => ({
+        stack: ["css, html", "js, ts", "react"],
+        firstName: man.name.split(' ')[0],
+        lastName: man.name.split(' ')[1]
+    })
+)
+
+
+export const createGreetingMessage = (people: ManType[]) => {
+    return  people.map( man => `Hello ${man.name.split(' ')[0]}. Welcome to IT`)
+}
