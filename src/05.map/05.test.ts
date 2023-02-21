@@ -15,4 +15,6 @@ test('should get array of greeting messages', ()=> {
 
     expect(messages.length).toBe(3)
     expect(messages[0]).toBe('Hello Andrew. Welcome to IT')
+    expect(messages[1]).toBe('Hello islam. Welcome to IT')
+    expect(messages[2]).toBe('Hello Dmitry. Welcome to IT')
 })
