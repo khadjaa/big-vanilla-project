@@ -36,3 +36,22 @@ test('array test', ()=> {
 
     expect(users[2]).toEqual({name: 'bandit', age: 10})
 })
+
+test('value type  test', ()=> {
+    let users = [
+        {
+            name : 'Isa',
+            age: 21
+        },
+        {
+            name : 'Isa',
+            age: 21
+        }
+    ]
+
+    let admin = users
+
+    admin.push({name: 'bandit', age: 10})
+
+    expect(users[2]).toEqual({name: 'bandit', age: 10})
+})
