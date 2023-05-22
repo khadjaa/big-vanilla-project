@@ -3,7 +3,6 @@
 // https://www.youtube.com/watch?v=I8LNJpG60vI&feature=youtu.be
 
 // 1. Simple object
-
 let man = {
     name: 'John',
     age: 28
